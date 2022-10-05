@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" /> 
+  <title>Ejemplos de HTML5:  multimedia</title>
+ </head>
+ <body>
+  <h1>Ejemplos de HTML5: multimedia picture</h1>
+  
+  <h2> Picture </h2>
+  <p>Contenedor de imagenes que proporciona múltiples formatos para un elemento img en función de la densidad de la pantalla, el tamaño de la pantalla gráfica, entre otros. El atributo <code>media</code> permite realizar la definición para determinados medios. </p>
+   <picture>
+	<source media="(max-width: 799px)" srcset="atrioUniovi-480w.png" />
+    <source media="(min-width: 800px)" srcset="atrioUniovi.png" />
+    <img src="atrioUniovi.png" alt="Atrio de la Universidad de Oviedo" />
+   </picture>
+	 
+ </body>
+</html>

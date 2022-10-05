@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" />
+  <title>Ejemplos de HTML5</title>
+ </head>
+ <body>
+    <h1>Utilización de las comillas</h1>
+    <p>En HTML5 es indiferente utilizar comillas doble ", simples ' o sin comillas para asignar valores, salvo que los valores contengan espacios en blanco donde es obligatorio utilizar comillas dobles ".</p>
+    <p><strong>RECOMENDACIÓN:</strong> Utilizar las comillas dobles siempre. Comprobar como se muestra en las herramientas del desarrollador una vez creado DOM </p>
+    <p>En este <a title='valor comillas simples' href='#'>enlace</a> el valor de los atributos href y title estan definidos con comillas simples. </p>
+
+    <p>En este <a title="valor comillas simples" href="#">enlace</a> el valor de los atributos href y title estan definidos con comillas doble <strong>[RECOMENDADO]</strong>. </p>
+    <p>En este <a title=sincomillas href=#>enlace</a> el valor de los atributos href y title estan definidos sin comillas.  </p>
+
+     
+  <!-- Se provoca un error asignando un valor con espacios en blanco y sin comillas -->
+     
+     <p>Esto es un <a title=sin Comillas href=#> ejemplo</a> sin comillas y con espacio en blanco. Genera problemas en la interpretación del valor del atributo title cuando este tiene mas de una palabra.</p>
+     <p>Error: Attribute comillas not allowed on element a at this point.</p>
+ </body>
+</html>

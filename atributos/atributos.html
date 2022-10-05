@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" /> 
+  <title>Ejemplos de HTML5. Atributos</title>
+ </head>
+ <body>
+     <!-- Para que los parentesis de apertura no los ejemplos no se interpreten se utiliza &lt;  &gt;-->
+     <h1>Atributos en HTML5</h1>
+        <p>Los atributos en HTML5 pueden ser globales que se pueden utilizar en todos los elementos y particulares de un elemento. Cada elemento HTML indica en su descripción los atributos que tiene.</p>      
+        <h2>Atributos Globales más habituales</h2>
+        <dl>
+
+            <dt>accesskey</dt> 
+                <dd> Permite a los agentes de usuario crear atajos de teclado para activar el foco del elemento. 
+                    Ejemplo:  <code>&lt;title="Actividades"  accesskey="A"  href= "actividades.html"&gt;
+                    <a title="Actividades"  accesskey="A"  href= "actividades.html"> 
+                    Resultado: [A]ctividades</a>. </code></dd>
+            
+            
+                
+            <dt>hidden</dt>
+            <dd>Permite definir contenido oculto. ATENCIÓN no debe utilizarse para no mostrar contenido del sitio.
+                Ejemplo:  <code>&lt;p&gt;Este texto aparecerá visible hasta aqui, despues &lt;span hidden&gt;estará oculto&lt;/span&gt;&lt;/p&gt;</code>
+                Resultado:<p>Este texto aparecerá visible hasta aqui, despues <span hidden>estará oculto</span>        </p>
+            </dd>
+            
+            
+            <dt>lang</dt>
+            <dd> Permite establecer el idioma que se utiliza  
+                Ejemplo: <code>&lt;p lang="fr"&gt; Ce paragraphe est rédigé en français.&lt;/p&gt;</code>
+                </dd>
+                  
+            
+            <dt>style</dt>
+            <dd>Permite especificar un estilo para el elemento en formato CSS.  ATENCIÓN: para garantizar la separación entre contenido y presentación debe evitarse utilizar este atributo.
+                Ejemplo: <code>&lt;p&gt;Mi chaqueta es &lt;span style= "color: green"&gt; verde&lt;/span&gt; y mis ojos son &lt;span style="color: blue"&gt; azules&lt;/span&gt;.&lt;/p&gt;</code><br>
+                
+                Resultado: Mi chaqueta es  <span style= "color: green"> verde</span>  y mis ojos son 
+    <span style="color: blue">azules</span>.
+            </dd>
+            
+            
+            <dt>tabindex</dt>
+            
+            <dd>Permite especificar el orden de los elementos y cuando tienen el foco de navegación.<br>
+                
+                Ejemplo: <code>&lt;a title="Actividades" tabindex= " 2"  href= "actividades.html"&gt;Actividades&lt;/a&gt; </code><br>
+                <code>&lt;a title= "Enlaces"  tabindex= " 1"  href= " enlaces.html"&gt;Enlaces&lt;/a&gt; </code><br>
+                    Resultado: 
+                <a title="Actividades" tabindex= "2"  href= "actividades.html">Actividades</a> 
+                <a title= "Enlaces"  tabindex= "1"  href= " enlaces.html">Enlaces</a>
+            </dd>
+            
+            
+            <dt>title</dt>
+            <dd>Permite especificar el título de un elemento. 
+                Ejemplo: <code>&lt;a title="Enlace a Actividades" href= "#"&gt;Actividades&lt;/a&gt; </code><br>
+                Resultado: colocar el ratón sobre el enlace <a title="Enlace a Actividades" href= "actividades.html">Actividades</a> 
+            
+            
+            </dd>
+            
+            <dt>dir</dt>
+            <dd>Permite indicar la direccionalidad del texto. <br>
+                Ejemplo:  <code>&lt;p dir="rtl"&gt;حولا&lt;/p&gt;</code>
+                Resultado:<p dir="rtl">حولا </p>
+                Ejemplo:  <code>&lt;p dir="rtl"&gt;hola&lt;/p&gt;</code>
+                Resultado:<p dir="ltr">hola  </p>    
+            </dd>
+            <dt>translate</dt>
+            <dd>Permite indicar si el elemento será traducido cuando el documento sea internacionalizado o no.</dd>
+        </dl>
+
+     
+     <h2>Otros atributos</h2>     
+     <dl>
+		
+        <dt>id</dt>
+            <dd> permite asignar un identificador único a un elemento 
+                
+                Ejemplo: <code>&lt;section id="principal"&gt;</code>
+                
+            </dd>
+
+		<dt>class</dt>
+            <dd>Permite clasificar a los elementos de HTML en clases que comparten características. 
+                Ejemplo <code>&lt;p class="destacado"&gt;</code></dd>
+
+		<dt>Atributo href</dt> <dd>permite indicar la ruta donde se encuentra un documento o una ubicación de internet  <code>&lt;a href="estructura/address.html"&gt;</code> ó <code>&lt;a href="http://www.google.com"&gt;</code></dd>
+         
+		<dt>Atributo src </dt><dd>permite indicar la ruta donde se encuentra un archivo para acceder a él <code>&lt;img src="multimedia/trailer.mp4"&gt;</code></dd>
+		
+		
+		
+		<dt>Atributo download</dt><dd> obliga a realizar la descarga de un recurso enlazado  <code>&lt;a href="plantilla.html" download&gt;</code></dd>
+         
+		<dt>Atributo reversed</dt> <dd>en una lista numerada la ordena en sentido inverso <code>&lt;ol reversed&gt;</code></dd>
+     </dl>
+ 
+
+
+	<h2>Activación de los atajos de Teclado:</h2> 
+     <ul>       
+        <li>Safari: ALT+atajo</li>
+        <li>Microsoft Edge: ALT+atajo+ENTER</li>
+        <li>Firefox: MAY+ALT+atajo</li>
+        <li>Opera: MAY+ESC+atajo</li>
+        <li>Chrome: ALT+atajo</li>
+     </ul>
+     <p>Enlaces a lista de idiomas: <a href="http://www.ietf.org/rfc/bcp/bcp47.txt">Tags for identifying Languages</a> y <a href="http://www.iso.org/iso/es/home/standards/language_codes.htm">ISO 639</a></p>
+ </body>
+</html>

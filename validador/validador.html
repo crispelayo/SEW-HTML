@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplos de HTML5</title>
+</head>
+<body>
+	<h1> Errores y advertencias en HTML5</h1>
+	<p> Este ejemplo sirve para mostrar algunas de las advertencias que se producen en el validador de HTML del W3C. El validador se actualiza constantemente y permite además que los usuarios introduzcan comentarios para seguir mejorando su funcionamiento. Por tanto la validez de este documento se refiere a la fecha de la última edición</p>
+	<p>Ultima actualización 25/09/2015</p>
+	
+	<h2>Utilización de elementos que no se encuentran en la estándar</h2>
+	
+	<p>El elemento &lt;hgroup&gt; esta definido por el whatwg pero no se encuentra definido en la especificación del W3C, por lo que genera un error. Ejemplo:</p>
+			
+	<hgroup> 
+		<h3>Encabezado de nivel3 dentro de &lt;hgroup&gt; </h3>
+		<h4>Encabezado de nivel4 dentro de &lt;hgroup&gt; </h4>
+	</hgroup> 
+	
+	<p>Mensaje del validador:  (Error) Element hgroup not allowed as child of element body in this context. (Suppressing further errors from this subtree.)</p>
+	
+	<p>Mensaje del validador:  (Error) The hgroup element is obsolete. To mark up subheadings, consider either just putting the subheading into a p element after the h1-h6 element containing the main heading, or else putting the subheading directly within the h1-h6 element containing the main heading, but separated from the main heading by punctuation and/or within, for example, a span class="subheading" element with differentiated styling. To group headings and subheadings, alternative titles, or taglines, consider using the header or div elements.</p>
+	
+	
+	<h2>Utilización de elementos que están implementados en los navegadores</h2>
+	
+	<p>El validador avisa de que ciertas características que se están utilizando no están implementadas en todos los navegadores y eso puede provocar problemas de visualización a los usuarios.</p>
+	
+	<p>Por ejemplo la utilización del elemento &lt;date&gt;  en un formulario</p>
+	
+	<form name="advertenciaDate">
+		<input type="date">Fecha nacimiento<br>
+	</form>
+	
+	
+	<p>Mensaje del validador:  (Warning) The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.</p>
+	
+	<h2>Utilización de elementos estructurales sin encabezados</h2>
+	
+	<p>El validador lanza una advertencia si se crean elementos estructurales por ejemplo &lt;section&gt;y no se incluye en ella un encabezado. Ejemplo:</p>
+	
+	<section> 
+		<p>Esta es una sección sin encabezado asociado</p>
+	</section> 
+	
+	<p>Mensaje del validador:  (Warning) Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.</p>
+	
+	<h2>Utilización del encabezado h1 reiteradamente</h2>
+	
+	<p>El validador lanza una advertencia si se crean elementos de encabezado &lt;h1&gt; más de una vez. Ejemplo:</p>
+	
+	<section> 
+		<h1>Encabezado de nivel 1 dentro de una sección</h1>
+		<p>Contenido de la sección</p>
+	</section> 
+	
+	<p>Mensaje del validador:  (Warning) Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).</p>
+	
+	<section> 
+		<h2>Encabezado de nivel 2 dentro de una sección</h2>
+		<p>Contenido de la sección con el encabezado de nivel 2</p>
+	</section> 
+	
+	<h2>Codificación incorrecta del contenido del archivo</h2>
+	
+	<p>El validador lanza una advertencia si se constata que el documento html contiene BOM al estar codificado en UTF-8. Ejemplo en el ejercicio de "textoblando.html"</p>
+	
+	<p>Mensaje del validador:  (Warning)Byte-Order Mark found in UTF-8 File. The Unicode Byte-Order Mark (BOM) in UTF-8 encoded files is known to cause problems for some text editors and older browsers. You may want to consider avoiding its use until it is better supported.</p>
+	
+</body>
+</html>

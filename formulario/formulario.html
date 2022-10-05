@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" /> 
+  <title>Ejemplos de HTML5: formulario</title>
+ </head>
+ <body>
+  <h1>Ejemplos de HTML5: formulario</h1>
+  
+  
+	<h2>formulario con diferentes tipos de elementos</h2>
+	<form name="datos">
+		<p><label for="nombre"> Nombre:  </label> <input id="nombre" type="text" placeholder="Escriba nombre" required /> </p>
+		<p><label for="apellido"> Apellido:  </label> <input id="apellido" type="text" placeholder="Escriba su apellido" required /> </p>
+		<p><label for="email"> E-mail:  </label> <input id="email" type="email" placeholder="Escriba su email" required /> </p> 
+		<p><label for="fecha">Fecha de nacimiento: </label><input id="fecha" type="date" /></p>
+		<p><label for="rango">Grado de satisfacción </label><input id="rango" type="range" /></p>
+		<fieldset>
+			<legend> ¿Estas interesado en tener más información?  </legend>
+			<p><input id="masinfo" type=radio /> <label  for="masinfo">  Si, quiero más información </label></p>
+			<p><input id="nomasinfo" type=radio  /><label  for="nomasinfo">De momento no quiero más información </label></p>
+		</fieldset>
+		<p><label for="texto"> Comentarios (opcionales):  </label> </p>
+		<textarea id="texto" name="comments" maxlength=1000 ></textarea>
+		
+		<p><input type="submit" value="Enviar"></p>
+	</form>
+
+	 
+ </body>
+</html>
